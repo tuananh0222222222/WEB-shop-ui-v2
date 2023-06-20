@@ -1055,6 +1055,19 @@ form.search button:hover {
     opacity: 1;
     visibility: inherit;
 }
+
+
+
+.page-home .dpt-cat .dpt-trigger,
+.dpt-trigger .ri-close-line,
+.showdpt .dpt-trigger .ri-menu-3-line {
+    display: none;
+}
+.showdpt .dpt-trigger .ri-close-line {
+    display: block;
+}
+
+
 /* RESPONSIVE */
 
 @media screen and (min-width:481px) {
@@ -1298,5 +1311,13 @@ form.search button:hover {
         display: flex   ;
         justify-content: space-between;
         align-items: center;
+    }
+
+    /* page single */
+    #page:not(.page-home) .dpt-menu {
+        display: none;
+    }
+    #page.showdpt .dpt-menu {
+        display: block;
     }
 }
