@@ -60,3 +60,54 @@ const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
 dptButton.addEventListener('click', function(){
     dptClass.classList.toggle('showdpt')
 })
+
+// swiper
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+// product image slider
+
+
+const productThumbnail = new Swiper('.small-image' ,{
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode:true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        481: {
+            spaceBetween: 32,
+        }
+    }
+}) 
+
+const productBig = new Swiper('.big-image' ,{
+loop: true,
+autoHeight: true,
+navigation : {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+thumbs: {
+    swiper :productThumbnail
+}
+}) 

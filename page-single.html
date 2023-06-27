@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/root.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -19,7 +24,7 @@
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
                 <div class="canvas-head flexitem">
-                    <div class="logo"><a href="#"><span class="circle">.Store</span></a> </div>
+                    <div class="logo"><a href="index.html"><span class="circle">.Store</span></a> </div>
                     <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
                 </div>
                 <div class="departments"></div>
@@ -88,11 +93,11 @@
                         <!-- left -->
                         <div class="left flexitem">
                             <div class="logo">
-                                <a href="#"><span class="circle">.Store</span></a>
+                                <a href="index.html"><span class="circle">.Store</span></a>
                             </div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="">Home</a></li>
+                                    <li><a href="index.html">Home</a></li>
                                     <li><a href="">Shop</a></li>
                                     <li class="has-child">
                                         <a href="">Women
@@ -354,12 +359,52 @@
             <div class="single-product">
                 <div class="container">
                     <div class="wrapper">
+                        <!--breadcrumb  -->
                         <div class="breadcrumb">
                             <ul class="flexitem">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Shoes</a></li>
                                 <li>Men shop On shoes</li>
                             </ul>
+                        </div>
+
+                        <div class="column">
+                            <div class="products one">
+                                <div class="flexwrap">
+                                    <div class="row">
+                                        <div class="item">
+                                            <div class="price">
+                                                <span class="discount">32% <br>OFF</span>
+                                            </div>
+                                            <div class="big-image">
+                                                <div class="big-image-wrapper swiper-wrapper">
+                                                    <div class="image-show swiper-slide">
+                                                        <a href="">
+                                                            <img src="assets/img/products/shoe1-1.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div thumbSlider="" class="small-image">
+                                                <ul class="small-image-wrapper flexitem swiper-wrapper">
+                                                    <li class="thumbnail-show swiper-slide" >
+                                                        
+                                                            <img src="assets/img/products/shoe1-1.jpg" alt="">
+                                              
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="item">
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -922,33 +967,9 @@
 
 
 
-    <!-- js -->
+
     <script src=" assets/js/index.js"></script>
-                                                <script
-                                                    src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-                                                <!-- Initialize Swiper -->
-                                                <script>
 
-                                                    const swiper = new Swiper('.swiper', {
-                                                        // Optional parameters
-
-                                                        loop: true,
-                                                        spaceBetween: 30,
-                                                        centeredSlides: true,
-                                                        autoplay: {
-                                                            delay: 3000,
-                                                            disableOnInteraction: false,
-                                                        },
-                                                        pagination: {
-                                                            el: ".swiper-pagination",
-                                                            clickable: true,
-                                                        },
-                                                        navigation: {
-                                                            nextEl: ".swiper-button-next",
-                                                            prevEl: ".swiper-button-prev",
-                                                        },
-                                                    });
-                                                </script>
 
 </body>
 
