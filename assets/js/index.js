@@ -111,3 +111,23 @@ thumbs: {
     swiper :productThumbnail
 }
 }) 
+
+const divtoshow = '.mini-cart';
+const divPopup = document.querySelector(divtoshow);
+const divTrigger = document.querySelector('.cart-trigger');
+
+divTrigger.addEventListener('click', () => {
+    setTimeout(() => {
+        if(!divPopup.classList.contains('show')) {
+            divPopup.classList.add('show');
+   
+        }
+    },250)
+});
+    // close the popup
+    document.addEventListener('click' ,(e) => {
+        const isClosest = e.target.closest(divtoshow);
+        if(!isClosest && divPopup.classList.contains('show')) { 
+            divPopup.classList.remove('show');
+    }
+})
